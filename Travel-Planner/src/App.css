@@ -1,0 +1,106 @@
+/* src/App.css */
+
+/* General styling for the entire app */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: #9eb59f;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Summary Styling */
+summary {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+summary p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* Small devices (mobile phones) */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem; /* Slightly smaller header on mobile */
+  }
+
+  form input,
+  form button {
+    max-width: 100%;
+  }
+
+  summary {
+    padding: 0 10px;
+  }
+}
+
+/* Medium devices (tablets and small desktops) */
+@media (max-width: 900px) {
+  form {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  summary {
+    max-width: 600px;
+  }
+}

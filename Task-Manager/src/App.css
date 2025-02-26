@@ -1,0 +1,222 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(45deg, #a9b8aa, #6b8e23);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transform: rotate(10deg);
+  border: 2px solid #000;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Task Input and Task List Styles */
+#task-input, #task-list {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form input[type="text"],
+form textarea,
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #bb8561;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #8b5e3c;
+}
+
+/* Task List Styles */
+#tasks {
+  list-style: none;
+  padding: 0;
+}
+
+#tasks li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tasks li.low {
+  border-left: 5px solid #4caf50;
+}
+
+#tasks li.medium {
+  border-left: 5px solid #ffeb3b;
+}
+
+#tasks li.high {
+  border-left: 5px solid #f44336;
+}
+
+button {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* Task Priority Colors */
+.low-priority {
+  border: 2px solid green;
+}
+
+.medium-priority {
+  border: 2px solid yellow;
+}
+
+.high-priority {
+  border: 2px solid red;
+}
+
+/* Profile Section */
+#profile {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3c3635;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Screens (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+      font-size: 1.5rem;
+  }
+
+  main {
+      padding: 1rem;
+  }
+
+  form input[type="text"],
+  form textarea,
+  form input[type="date"],
+  form select {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  form button {
+      width: 100%;
+      padding: 0.5rem;
+  }
+
+  #task-input, #task-list {
+      padding: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  #tasks li {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+  }
+
+  footer {
+      font-size: 0.9rem;
+  }
+}
+
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+      font-size: 1.75rem;
+  }
+
+  main {
+      padding: 1.5rem;
+  }
+
+  #task-input, #task-list {
+      padding: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  #tasks li {
+      font-size: 1rem;
+  }
+
+  footer {
+      font-size: 1rem;
+  }
+}
+
+/* Large Screens (Desktop Screens above 1024px) */
+@media (min-width: 1024px) {
+  main {
+      padding: 3rem;
+  }
+
+  #task-input, #task-list {
+      width: 70%;
+      margin: 0 auto;
+  }
+
+  #tasks li {
+      font-size: 1.25rem;
+  }
+}
