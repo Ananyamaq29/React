@@ -15,7 +15,7 @@ function App() {
 
   // Fetch blogs data from an API (mocked)
   useEffect(() => {
-    fetch("https://api.example.com/blogs") // Replace with actual API
+    fetch("http://localhost:5187") // Replace with actual API
       .then(response => response.json())
       .then(data => {
         setBlogs(data.blogs);

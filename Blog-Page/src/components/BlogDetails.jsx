@@ -6,7 +6,7 @@ const BlogDetails = () => {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    fetch(`https://api.example.com/blogs/${id}`) // Replace with actual API
+    fetch(`http://localhost:5187/${id}`) // Replace with actual API
       .then(response => response.json())
       .then(data => setBlog(data.blog));
   }, [id]);
